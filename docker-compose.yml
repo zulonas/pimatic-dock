@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  pimatic:
+    build: .
+    ports:
+      - "8080:80"
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    volumes:
+      - ${PWD}/config.json:/etc/opt/pimatic-app/config.json
