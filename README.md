@@ -1,8 +1,8 @@
 # Docker env for Pimatic
 
 Simple docker environment for [Pimatic](https://github.com/pimatic/pimatic).
-This setup should work fine on Linux and maybe MAC OS. Sadly, Windows docker
-don't have capabilities to mount USB devices.
+This should work on Linux and maybe on MacOS. However, Windows docker don't have
+capabilities to mount USB devices.
 
 ## Setup
 Open `docker-compose.yml` and remap USB devices if necessary.
